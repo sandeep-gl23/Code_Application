@@ -16,14 +16,26 @@ public class Field {
     String id;
 //    @Indexed(unique = true)
     String code;
-
     String name;
     String desc;
     Date start_date;
     Date end_date;
     Boolean status=false;
-
     Double version;
+
+    public Field() {
+    }
+
+    public Field(String id, String code, String name, String desc, Date start_date, Date end_date, Boolean status, Double version) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.desc = desc;
+        this.start_date = start_date;
+        this.end_date = end_date;
+        this.status = status;
+        this.version = version;
+    }
 
     public Double getVersion() {
         return version;
